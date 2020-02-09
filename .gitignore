@@ -1,0 +1,10 @@
+# Ignore everything in repository root 
+/*
+
+!.gitignore
+
+!.config/
+.config/*
+!.config/kak/
+!.config/kak-lsp/
+

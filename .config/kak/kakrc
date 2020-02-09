@@ -1,0 +1,7 @@
+eval %sh{kak-lsp --kakoune -s $kak_session}
+hook global WinSetOption filetype=(c|cpp) %{
+    lsp-enable-window
+}
+
+map global user l ':enter-user-mode<space>lsp<ret>'
+
