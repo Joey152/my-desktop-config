@@ -2,5 +2,5 @@
 filetypes = ["c", "cpp"]
 roots = [".ccls-root", "compile_commands.json"]
 command = "ccls"
-args = ["--init={\"completion\":{\"detailedLabel\":false},\"compilationDatabaseDirectory\": \"build\"}"]
+args = ["--init={\"completion\":{\"detailedLabel\":false},\"compilationDatabaseDirectory\":\"build\"}"]
 

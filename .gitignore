@@ -3,8 +3,12 @@
 
 !.gitignore
 
+!.editorconfig
+!.zshrc
+
 !.config/
 .config/*
 !.config/kak/
 !.config/kak-lsp/
+!.config/zsh
 

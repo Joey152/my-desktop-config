@@ -5,3 +5,6 @@ hook global WinSetOption filetype=(c|cpp) %{
 
 map global user l ':enter-user-mode<space>lsp<ret>'
 
+hook global BufOpenFile .* editorconfig-load
+hook global BufNewFile .* editorconfig-load
+
