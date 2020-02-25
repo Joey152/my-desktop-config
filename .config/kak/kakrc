@@ -5,6 +5,24 @@ hook global WinSetOption filetype=(c|cpp) %{
 
 map global user l ':enter-user-mode<space>lsp<ret>'
 
-hook global BufOpenFile .* editorconfig-load
-hook global BufNewFile .* editorconfig-load
+hook global WinCreate .* %{
+    hook window InsertCompletionShow .* %{
+        map window insert <tab> <c-n>
+        map window insert <s-tab> <c-p>
+    }
+
+    hook window InsertCompletionHide .* %{
+        unmap window insert <tab> <c-n>
+        unmap window insert <s-tab> <c-p>
+    }
+}
+
+# replace tabs with editconfig settings
+hook global InsertChar \t %{ try %{
+    execute-keys -draft "h<a-h><a-k>\A\h+\z<ret><a-;>;%opt{indentwidth}@"
+}}
+
+hook global InsertDelete ' ' %{ try %{
+    execute-keys -draft 'h<a-h><a-k>\A\h+\z<ret>i<space><esc><lt>'
+}}
 
