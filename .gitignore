@@ -10,5 +10,6 @@
 .config/*
 !.config/kak/
 !.config/kak-lsp/
-!.config/zsh
+!.config/zsh/
+!.config/ranger/
 
