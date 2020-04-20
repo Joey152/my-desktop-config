@@ -8,9 +8,10 @@
 
 !.config/
 .config/*
+!.config/herbstluftwm/
 !.config/kak/
 !.config/kak-lsp/
-!.config/zsh/
-!.config/ranger/
 !.config/kitty/
+!.config/ranger/
+!.config/zsh/
 
