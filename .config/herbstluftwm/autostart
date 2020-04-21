@@ -22,6 +22,7 @@ hc keybind $Mod-Shift-r reload
 hc keybind $Mod-Shift-c close
 hc keybind $Mod-Return spawn kitty
 hc keybind $Mod-space spawn rofi -modi drun -show drun -show-icons
+hc keybind $Mod-Shift-space spawn rofi -modi drun -show drun -show-icons -run-command "qsudo {cmd}" -display-drun "sudo"
 
 # basic movement
 # focusing clients
