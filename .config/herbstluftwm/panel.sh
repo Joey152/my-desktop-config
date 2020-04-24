@@ -59,7 +59,7 @@ while read line; do
 
     date=$(date +"%a %d/%m/%y %I:%M%p")
 
-    echo "%{l}$tags%{r}$date $default_f$default_b"
+    echo "%{l}$tags$default_f$default_b%{r}$date $default_f$default_b"
 done | lemonbar -g "${bar_width}x$bar_height+$bar_offset+" -f "$font"
 
 # while true; do
