@@ -15,6 +15,8 @@ compinit
 # environment variables
 export XDG_CONFIG_HOME=$HOME/.config
 export EDITOR=kak
+typeset -U path
+path=('/home/joey/.local/bin' $path)
 
 # constant local variables
 plugin_dir="$XDG_CONFIG_HOME/zsh/plugins"
